@@ -1,8 +1,9 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "Hello Min!, today is your very special day.",
-    "So, i created a page to celebrate this extraordinary day.",
-    "I Wish happiness, and everthing you wish can be achived.",
+    "Xin chào Min! Hôm nay là ngày rất đặc biệt của bạn.",
+    "Vì vậy, tôi đã tạo trang này để kỷ niệm ngày đặc biệt của bạn.",
+    "Tôi cầu chúc hạnh phúc, và mọi thứ bạn muốn đều có thể đạt được.",
+    "Sự giàu có, trí tuệ và sức khỏe sẽ luôn ở bên bạn",
     "Happy Birthday Lê Thùy Minh Hằng"
 );
 var iSpeed = 100; // time delay of print out
@@ -23,7 +24,7 @@ function typewriter() {
     //     sContents += aText[iRow++] + '<br />';
     // }
     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-    
+
     if (iTextPos++ == iArrLength) {
         iTextPos = 0;
         iIndex++;
