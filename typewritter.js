@@ -1,6 +1,6 @@
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "Hello Min!, today is your very special day",
+    "Hello Min!, today is your very special day.",
     "So, i created a page to celebrate this extraordinary day.",
     "I Wish happiness, and everthing you wish can be achived.",
     "Happy Birthday Lê Thùy Minh Hằng"
@@ -23,7 +23,7 @@ function typewriter() {
     //     sContents += aText[iRow++] + '<br />';
     // }
     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-
+    
     if (iTextPos++ == iArrLength) {
         iTextPos = 0;
         iIndex++;
